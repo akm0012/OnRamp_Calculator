@@ -1,0 +1,193 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/calculator_display_top_margin"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:paddingRight="@dimen/calculator_display_right_margin"
+        android:text="@string/button_zero"
+        android:textSize="@dimen/calculator_display_text_size"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:padding="@dimen/calculator_keypad_padding">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <Button
+                android:id="@+id/button_7"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/calculator_number_button_height"
+                android:text="@string/button_7"
+                android:textSize="@dimen/calculator_button_text_size"/>
+
+            <Button
+                android:id="@+id/button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/calculator_number_button_height"
+                android:layout_below="@id/button_7"
+                android:text="@string/button_4"
+                android:textSize="@dimen/calculator_button_text_size"/>
+
+            <Button
+                android:id="@+id/button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/calculator_number_button_height"
+                android:layout_below="@id/button_4"
+                android:text="@string/button_1"
+                android:textSize="@dimen/calculator_button_text_size"/>
+
+            <Button
+                android:id="@+id/button_decimal"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/calculator_number_button_height"
+                android:layout_below="@id/button_1"
+                android:text="@string/button_decimal"
+                android:textSize="@dimen/calculator_button_text_size"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <Button
+                android:id="@+id/button_8"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/calculator_number_button_height"
+                android:text="@string/button_8"
+                android:textSize="@dimen/calculator_button_text_size"/>
+
+            <Button
+                android:id="@+id/button_5"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/calculator_number_button_height"
+                android:layout_below="@id/button_8"
+                android:text="@string/button_5"
+                android:textSize="@dimen/calculator_button_text_size"/>
+
+            <Button
+                android:id="@+id/button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/calculator_number_button_height"
+                android:layout_below="@id/button_5"
+                android:text="@string/button_2"
+                android:textSize="@dimen/calculator_button_text_size"/>
+
+            <Button
+                android:id="@+id/button_0"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/calculator_number_button_height"
+                android:layout_below="@id/button_2"
+                android:text="@string/button_zero"
+                android:textSize="@dimen/calculator_button_text_size"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <Button
+                android:id="@+id/button_9"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/calculator_number_button_height"
+                android:text="@string/button_9"
+                android:textSize="@dimen/calculator_button_text_size"/>
+
+            <Button
+                android:id="@+id/button_6"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/calculator_number_button_height"
+                android:layout_below="@id/button_9"
+                android:text="@string/button_6"
+                android:textSize="@dimen/calculator_button_text_size"/>
+
+            <Button
+                android:id="@+id/button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/calculator_number_button_height"
+                android:layout_below="@id/button_6"
+                android:text="@string/button_3"
+                android:textSize="@dimen/calculator_button_text_size"/>
+
+            <Button
+                android:id="@+id/button_equals"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/calculator_number_button_height"
+                android:layout_below="@id/button_3"
+                android:text="@string/button_equals"
+                android:textSize="@dimen/calculator_button_text_size"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <Button
+                android:id="@+id/button_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/calculator_function_button_height"
+                android:text="@string/button_delete"
+                android:textSize="@dimen/calculator_button_text_size_delete"/>
+
+            <Button
+                android:id="@+id/button_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/calculator_function_button_height"
+                android:layout_below="@id/button_delete"
+                android:text="@string/button_plus"
+                android:textSize="@dimen/calculator_button_text_size"/>
+
+            <Button
+                android:id="@+id/button_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/calculator_function_button_height"
+                android:layout_below="@id/button_plus"
+                android:text="@string/button_minus"
+                android:textSize="@dimen/calculator_button_text_size"/>
+
+            <Button
+                android:id="@+id/button_multiply"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/calculator_function_button_height"
+                android:layout_below="@id/button_minus"
+                android:text="@string/button_multiply"
+                android:textSize="@dimen/calculator_button_text_size"/>
+
+            <Button
+                android:id="@+id/button_divide"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/calculator_function_button_height"
+                android:layout_below="@id/button_multiply"
+                android:text="@string/button_divide"
+                android:textSize="@dimen/calculator_button_text_size"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

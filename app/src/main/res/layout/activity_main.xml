@@ -7,12 +7,14 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView_display"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/calculator_display_top_margin"
         android:layout_weight="1"
         android:gravity="right"
         android:paddingRight="@dimen/calculator_display_right_margin"
+        android:textColor="@color/black"
         android:text="@string/button_zero"
         android:textSize="@dimen/calculator_display_text_size"/>
 
@@ -32,6 +34,7 @@
                 android:id="@+id/button_7"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/calculator_number_button_height"
+                android:background="@drawable/custom_btn_green"
                 android:text="@string/button_7"
                 android:textSize="@dimen/calculator_button_text_size"/>
 
@@ -40,6 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/calculator_number_button_height"
                 android:layout_below="@id/button_7"
+                android:background="@drawable/custom_btn_red"
                 android:text="@string/button_4"
                 android:textSize="@dimen/calculator_button_text_size"/>
 
@@ -48,6 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/calculator_number_button_height"
                 android:layout_below="@id/button_4"
+                android:background="@drawable/custom_btn_orange"
                 android:text="@string/button_1"
                 android:textSize="@dimen/calculator_button_text_size"/>
 
@@ -56,6 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/calculator_number_button_height"
                 android:layout_below="@id/button_1"
+                android:background="@drawable/custom_btn_purple"
                 android:text="@string/button_decimal"
                 android:textSize="@dimen/calculator_button_text_size"/>
 
@@ -71,6 +77,7 @@
                 android:id="@+id/button_8"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/calculator_number_button_height"
+                android:background="@drawable/custom_btn_yellow"
                 android:text="@string/button_8"
                 android:textSize="@dimen/calculator_button_text_size"/>
 
@@ -79,6 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/calculator_number_button_height"
                 android:layout_below="@id/button_8"
+                android:background="@drawable/custom_btn_purple"
                 android:text="@string/button_5"
                 android:textSize="@dimen/calculator_button_text_size"/>
 
@@ -87,6 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/calculator_number_button_height"
                 android:layout_below="@id/button_5"
+                android:background="@drawable/custom_btn_blue"
                 android:text="@string/button_2"
                 android:textSize="@dimen/calculator_button_text_size"/>
 
@@ -95,6 +104,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/calculator_number_button_height"
                 android:layout_below="@id/button_2"
+                android:background="@drawable/custom_btn_green"
                 android:text="@string/button_zero"
                 android:textSize="@dimen/calculator_button_text_size"/>
 
@@ -110,6 +120,7 @@
                 android:id="@+id/button_9"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/calculator_number_button_height"
+                android:background="@drawable/custom_btn_blue"
                 android:text="@string/button_9"
                 android:textSize="@dimen/calculator_button_text_size"/>
 
@@ -118,12 +129,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/calculator_number_button_height"
                 android:layout_below="@id/button_9"
+                android:background="@drawable/custom_btn_green"
                 android:text="@string/button_6"
                 android:textSize="@dimen/calculator_button_text_size"/>
 
             <Button
                 android:id="@+id/button_3"
                 android:layout_width="wrap_content"
+                android:background="@drawable/custom_btn_red"
                 android:layout_height="@dimen/calculator_number_button_height"
                 android:layout_below="@id/button_6"
                 android:text="@string/button_3"
@@ -132,6 +145,7 @@
             <Button
                 android:id="@+id/button_equals"
                 android:layout_width="wrap_content"
+                android:background="@drawable/custom_btn_purple"
                 android:layout_height="@dimen/calculator_number_button_height"
                 android:layout_below="@id/button_3"
                 android:text="@string/button_equals"
@@ -147,6 +161,7 @@
 
             <Button
                 android:id="@+id/button_delete"
+                android:background="@drawable/custom_btn_red"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/calculator_function_button_height"
                 android:text="@string/button_delete"
@@ -154,6 +169,7 @@
 
             <Button
                 android:id="@+id/button_plus"
+                android:background="@drawable/custom_btn_purple"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/calculator_function_button_height"
                 android:layout_below="@id/button_delete"
@@ -162,6 +178,7 @@
 
             <Button
                 android:id="@+id/button_minus"
+                android:background="@drawable/custom_btn_beach"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/calculator_function_button_height"
                 android:layout_below="@id/button_plus"
@@ -173,6 +190,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/calculator_function_button_height"
                 android:layout_below="@id/button_minus"
+                android:background="@drawable/custom_btn_green"
                 android:text="@string/button_multiply"
                 android:textSize="@dimen/calculator_button_text_size"/>
 
@@ -181,6 +199,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/calculator_function_button_height"
                 android:layout_below="@id/button_multiply"
+                android:background="@drawable/custom_btn_yellow"
                 android:text="@string/button_divide"
                 android:textSize="@dimen/calculator_button_text_size"/>
 

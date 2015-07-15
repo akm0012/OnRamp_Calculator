@@ -178,7 +178,7 @@
 
             <Button
                 android:id="@+id/button_minus"
-                android:background="@drawable/custom_btn_beach"
+                android:background="@drawable/custom_btn_blue"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/calculator_function_button_height"
                 android:layout_below="@id/button_plus"

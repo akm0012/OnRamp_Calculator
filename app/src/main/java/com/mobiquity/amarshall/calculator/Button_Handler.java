@@ -25,14 +25,14 @@ public class Button_Handler implements View.OnClickListener, View.OnTouchListene
     private Context main_activity_context;
 
     /** Holds the values for the calculation */
-    private int result;
+    private long result;
 
     /** Indicated which function we are in */
     private int selected_function;
 
     /** The String that is displayed in the Display */
     private String display_string;
-    private int displayed_num;
+    private long displayed_num;
 
     /** Boolean used for triggering a clear */
     private boolean long_pressed = false;
@@ -175,7 +175,7 @@ public class Button_Handler implements View.OnClickListener, View.OnTouchListene
 
         textView_display.setText(display_string);
 
-        displayed_num = Integer.parseInt(display_string);
+        displayed_num = Long.parseLong(display_string);
 
         Log.d(TAG, "Value in display: " + display_string);
 
